@@ -1,11 +1,9 @@
 import React from "react";
-import buttons_clr from "../../../pages/WelcomePage/WelcomePage.module.css";
 import buttons from "./AuthButtons.module.css";
-import dark from "../../../styles/themes/dark.module.css";
 
-export default function AuthButtons() {
-  const buttonName = `${buttons["auth-button"]} ${buttons_clr["form-button"]} 
-    ${dark["fb-yellow"]}`;
+export default function AuthButtons(props) {
+  const buttonName = `form-button form-button__alt 
+    ${buttons.authButton} fb-${props.color}`;
 
   return (
     <div className={buttons.authButtons}>

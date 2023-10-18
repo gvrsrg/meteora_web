@@ -1,5 +1,4 @@
 import side from "./SideBar.module.css";
-
 import MenuItem from "../MenuItem/MenuItem";
 
 export default function SideBar({ items, user }) {

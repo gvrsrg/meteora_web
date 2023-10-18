@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
 import loader from "./assets/preloader.svg";
+import "./styles/themes/dark.css";
+import "./index.css";
 import ls from "./styles/LoadingScreen.module.css";
-import main from "./styles/Main.module.css";
-import dark from "./styles/themes/dark.module.css";
 import get_client from "./data/api";
 import WelcomePage from "./pages/WelcomePage/WelcomePage";
 import MainPage from "./pages/MainPage/MainPage";
-import "./index.css";
 
 export default function App() {
   const [client, setClient] = useState("");
@@ -21,7 +20,7 @@ export default function App() {
 
   return (
     <div className="app">
-      <main className={main.fullScreen + ls.loadingScreen}>
+      <main className={"fullScreen " + ls.loadingScreen}>
         <div className={ls.screenPanel}>
           <div className={ls.title}>Meteora</div>
 
@@ -30,7 +29,7 @@ export default function App() {
           <img
             src={loader}
             alt=""
-            className={dark["ui-icon"] + " " + ls.preloader}
+            className={"ui-icon " + ls.preloader}
           />
         </div>
       </main>
