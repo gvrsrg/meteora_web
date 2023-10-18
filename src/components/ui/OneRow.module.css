@@ -1,0 +1,31 @@
+.row-block {
+    display: flex;
+    user-select: none;
+    flex-direction: column;
+}
+
+.row-block:not(:first-child) {
+    margin-top: 15px;
+}
+
+.row-title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.row-list,
+.list-tech {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.list-tech {
+    margin-top: 15px;
+}
+
+.row-list {
+    grid-gap: 15px;
+    overflow-x: auto;
+}

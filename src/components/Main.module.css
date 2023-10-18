@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+textarea,
+body, input,
+select, option {
+    border: none;
+    outline: none;
+    font-family: "Montserrat";
+}
+
+
+/* UI screens */
+
+.scrollArea {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.fullScreen {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.fullScreen__header {
+    overflow: hidden;
+    height: calc(100vh - 50px);
+}
+
+
+/* UI blocks */
+
+.ui-block {
+    padding: 12px;
+    border-radius: 10px;
+}
+
+
+/* UI buttons styles */
+
+.ui-inlineButton {
+    border-radius: 10px;
+    padding: 2.5px 7.5px;
+}
+
+.submit-button {
+    padding: 12px;
+    text-align: center;
+    border-radius: 16px;
+}
+
+.fb__fill > img {
+    margin: auto;
+
+    width: 18px;
+    height: 18px;
+}
+
+.fb__fit {
+    align-self: center;
+    width: fit-content;
+}
+
+
+/* UI misc styles */
+
+.ui-filler {
+    flex: 1 1 auto;
+}
+
+.preloader {
+    width: auto;
+    height: 32px;
+}
+
+
+
+.embed-image, .embed-video {
+    width: 100%;
+    margin: 5px 0;
+    border-radius: 7.5px;
+}
+
+.embed-link {
+    text-decoration: none;
+}
+
+.embed-link:hover {
+    text-decoration: underline;
+}
+
+.--no-paddings {
+    padding: 0 !important;
+    border-radius: 0 !important;
+}
