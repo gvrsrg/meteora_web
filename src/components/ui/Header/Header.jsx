@@ -1,7 +1,6 @@
 import React from "react";
 import logo from "../../../assets/favicon.svg";
 import header from "./Header.module.css";
-import main from "../../../styles/Main.module.css";
 import AuthButtons from "../AuthButtons/AuthButtons";
 import SearchBar from "../SearchBar/SearchBar";
 
@@ -18,9 +17,9 @@ export default function Header(props) {
 
       {props.search ? <SearchBar /> : null}
 
-      <div className={main["ui-filler"]}></div>
+      <div className="ui-filler"></div>
 
-      {props.auth ? <AuthButtons /> : null}
+      {props.auth ? <AuthButtons color="yellow"/> : null}
     </header>
   );
 }
