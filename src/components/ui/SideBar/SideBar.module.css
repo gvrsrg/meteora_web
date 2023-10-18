@@ -1,0 +1,60 @@
+.ui-sidebar {
+    display: flex;
+    user-select: none;
+    width: fit-content;
+    flex-direction: column;
+}
+
+.menu-divider {
+    height: 1px;
+    margin: 10px 0 5px 0;
+}
+
+
+/* Menu item */
+
+.menu-item {
+    display: flex;
+    padding: 4px 5px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.menu-item > img {
+    width: 20px;
+    height: 20px;
+}
+
+.menu-item > span {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 25px 0 10px;
+}
+
+.menu-item:not(:first-child) {
+    margin-top: 5px;
+}
+
+.menu-item:hover {
+    cursor: pointer;
+}
+
+
+/* User profile menu item */
+
+.user-item {
+    padding: 4px 5px;
+    margin-bottom: 10px;
+}
+
+.user-item > img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: center;
+}
+
+.user-item > span {
+    font-size: 16px;
+}

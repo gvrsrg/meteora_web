@@ -1,0 +1,20 @@
+.authButtons {
+    display: flex;
+    flex-direction: row;
+}
+
+.authButtons > 
+.auth-button:not(:first-child) {
+    margin-left: 15px;
+}
+
+.auth-button {
+    font-weight: 500;
+    padding: 3px 7.5px;
+    border-radius: 5px;
+}
+
+.auth-button:hover {
+    cursor: pointer;
+    transition: 0.15s background-color;
+}

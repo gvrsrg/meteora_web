@@ -1,0 +1,115 @@
+.screen {
+    display: flex;
+    user-select: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.background {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    filter: brightness(0.5);
+}
+
+
+/* first screen text */
+
+.title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.subtitle {
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+
+/* Big start button */
+
+.form-button {
+    color: black;
+}
+
+.form-button:hover {
+    cursor: pointer;
+    transition: 0.15s background-color;
+}
+
+.fb__big {
+    font-size: 24px;
+    margin-top: 25px;
+    font-weight: 600;
+    padding: 7.5px 20px;
+    border-radius: 35px;
+}
+
+
+/* Mobile-adaptive styles */
+
+@media all and (orientation: portrait) {
+    /* Site bg */
+    
+    .background {
+        object-fit: cover;
+    }
+}
+
+@media all and (max-device-width: 670px) {
+    /* First screen text */
+    
+    .title {
+        font-size: 28px;
+    }
+
+    .subtitle {
+        font-size: 17px;
+    }
+
+    /* Start button */
+
+    .fb__big {
+        font-size: 22px;
+    }
+}
+
+@media all and (max-device-width: 520px) {
+    /* First screen text */
+    
+    .title {
+        font-size: 24px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    /* Start button */
+
+    .fb__big {
+        font-size: 17px;
+    }
+}
+
+@media all and (max-device-width: 670px) {
+    /* First screen text */
+    
+    .title {
+        font-size: 20px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+    }
+
+    /* Start button */
+
+    .fb__big {
+        font-size: 15px;
+    }
+}
