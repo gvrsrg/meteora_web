@@ -1,10 +1,9 @@
 import React from "react";
 import bg from "../../assets/images/bg.jpeg";
 import "../../styles/themes/dark.css";
-import "../../index.css";
-import header from "../../components/ui/Header/Header.module.css";
+import header from "../../components/Header/Header.module.css";
 import welcome from "./WelcomePage.module.css";
-import Header from "../../components/ui/Header/Header";
+import Header from "../../components/Header/Header";
 
 export default function Welcome() {
   const bigStartButton = `formButton formButton__alt fb__yellow 
