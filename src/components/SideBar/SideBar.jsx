@@ -1,22 +1,30 @@
 import side from "./SideBar.module.css";
 import MenuItem from "../MenuItem/MenuItem";
+import { sideItems } from "../../data/config";
+import { useEffect, useState } from "react";
+import get_client from "../../data/api";
 
-export default function SideBar({ items, user }) {
+export default function SideBar() {
+  const [client, setClient] = useState(false);
   const userItem = `${side.menuItem} ${side.userItem}`;
-  const to_user = () => (window.location.href = "/u/" + user.userId);
+  const to_user = () => (window.location.href = "/u/" + client.userId);
 
-  if (!items) return null;
+  useEffect(() => {
+    get_client().then((status) => setClient(status));
+  }, []);
+
+  if (!sideItems) return null;
 
   return (
-    <aside className={side.sidebar}>
-      {user ? (
+    <aside className={side["ui-sidebar"]}>
+      {client ? (
         <div className={userItem} onClick={(e) => to_user()}>
-          <img src={user.icon} alt="" />
-          <span>{user.nickname}</span>
+          <img src={client.icon} alt="" />
+          <span>{client.nickname}</span>
         </div>
       ) : null}
 
-      {items.map((item) => (
+      {sideItems.map((item) => (
         <MenuItem key={Math.random()} {...item} />
       ))}
     </aside>
