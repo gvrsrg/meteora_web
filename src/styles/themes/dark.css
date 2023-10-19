@@ -21,20 +21,20 @@ header {
 /* Icons styles */
 
 @media all and (hover) {
-  .ui-clickable:hover {
+  .clickableIcon:hover {
     /* #b0b0b0 */
     filter: invert(68%) sepia(25%) saturate(23%) hue-rotate(317deg)
       brightness(96%) contrast(98%);
   }
 }
 
-.ui-icon {
+.icon {
   /* #d8d8d8 */
   filter: invert(100%) sepia(0%) saturate(6044%) hue-rotate(212deg)
     brightness(86%) contrast(95%);
 }
 
-.ui-clickable:active {
+.clickableIcon:active {
   /* #808080 */
   filter: invert(52%) sepia(2%) saturate(28%) hue-rotate(341deg) brightness(96%)
     contrast(88%);
@@ -43,7 +43,7 @@ header {
 /* UI Hoverable styles */
 
 @media all and (hover) {
-  .menu-item:hover {
+  .menuItem:hover {
     background-color: #343434;
     transition: background-color 0.15s;
   }
@@ -57,19 +57,19 @@ header {
 
   /* Forms buttons */
 
-  .fb-green:hover {
+  .fb__green:hover {
     background-color: #02833a;
   }
 
-  .fb-red:hover {
+  .fb__red:hover {
     background-color: #d10000;
   }
 
-  .fb-blue:hover {
+  .fb__blue:hover {
     background-color: #005bb1;
   }
 
-  .fb-yellow:hover {
+  .fb__yellow:hover {
     background-color: #d87e00;
   }
 
@@ -91,12 +91,12 @@ header {
 
 /* UI blocks styles */
 
-.ui-block {
+.block {
   border: 1px solid #414141;
   background-color: #343434;
 }
 
-.ui-block-2 {
+.block__dark {
   border: 1px solid #505050;
   background-color: #202020;
 }
@@ -125,13 +125,13 @@ header {
 
 /* Menu item button */
 
-.menu-item:active {
+.menuItem:active {
   background-color: #343434;
 }
 
 /* UI misc styles */
 
-.menu-divider {
+.divider {
   background-color: #505050;
 }
 
@@ -141,7 +141,7 @@ header {
   white-space: nowrap;
 }
 
-.ui-input {
+.input {
   color: #d8d8d8;
   background-color: transparent;
 }
@@ -161,7 +161,7 @@ header {
 
 /* Search bar styles (inline) */
 
-.search-bar {
+.searchBar {
   background-color: #303030;
   border: 1px solid #414141;
 }
@@ -180,35 +180,35 @@ header {
 
 /* Forms buttons styles */
 
-.fb-green {
+.fb__green {
   background-color: #00a347;
 }
 
-.fb-green:active {
+.fb__green:active {
   background-color: #006b2e;
 }
 
-.fb-red {
+.fb__red {
   background-color: #fd2828;
 }
 
-.fb-red:active {
+.fb__red:active {
   background-color: #a50000;
 }
 
-.fb-blue {
+.fb__blue {
   background-color: #0067c7;
 }
 
-.fb-blue:active {
+.fb__blue:active {
   background-color: #004b91;
 }
 
-.fb-yellow {
+.fb__yellow {
   background-color: #ff9300;
 }
 
-.fb-yellow:active {
+.fb__yellow:active {
   background-color: #c77400;
 }
 

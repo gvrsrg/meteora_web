@@ -17,8 +17,8 @@ export default function Index(props) {
         <SideBar items={sideItems} user={props.client} />
 
         <div className={index.container}>
-          <OneRow name="my-clubs" title="Мои клубы" createClub={true} />
-          <OneRow name="popular-clubs" title="Поплуярные клубы" />
+          <OneRow name="myClubs" title="Мои клубы" createClub={true} />
+          <OneRow name="popularClubs" title="Поплуярные клубы" />
 
           <GridBlock name="board" title="Вам может быть интересно" />
         </div>

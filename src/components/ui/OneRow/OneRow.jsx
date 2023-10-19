@@ -1,22 +1,24 @@
 import React from "react";
-import orow from "./OneRow.module.css";
+import _block from "./OneRow.module.css";
 
 // Сделать модальное окно для создания клуба
 
 export default function OneRow(props) {
-  const olist = `${orow["row-list"]} ${props.name}`;
-  const block = `ui-block ${orow["row-block"]} ${props.name}`;
+  const listName = `${_block.list} ${props.name}`;
+  const blockName = `block ${_block.block} ${props.name}`;
 
   return (
-    <div className={block}>
-      <span className={orow["row-title"]}>{props.title}</span>
-      <div className={orow["list-tech"]}>
+    <div className={blockName}>
+      <span className={_block.title}>{props.title}</span>
+      <div className={_block.wrapper}>
         {props.createClub ? (
-          <div className={orow["create-club"]} onClick={(e) => {}}>
+          <div className={_block.createClub} onClick={(e) => {}}>
             Создать клуб
           </div>
         ) : null}
-        <div className={olist}>Objects list</div>
+        <div className={listName}>
+          Objects list
+        </div>
       </div>
     </div>
   );

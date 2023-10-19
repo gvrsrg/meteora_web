@@ -1,16 +1,16 @@
-.grid-block {
+.block {
     display: flex;
     margin-top: 15px;
     user-select: none;
     flex-direction: column;
 }
 
-.grid-title {
+.title {
     font-size: 18px;
     font-weight: 500;
 }
 
-.grid-list {
+.list {
     display: grid;
     grid-gap: 15px;
     margin-top: 15px;

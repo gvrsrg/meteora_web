@@ -2,8 +2,8 @@ import React from "react";
 import buttons from "./AuthButtons.module.css";
 
 export default function AuthButtons(props) {
-  const buttonName = `form-button form-button__alt 
-    ${buttons.authButton} fb-${props.color}`;
+  const buttonName = `formButton formButton__alt 
+    ${buttons.authButton} fb__${props.color}`;
 
   return (
     <div className={buttons.authButtons}>
