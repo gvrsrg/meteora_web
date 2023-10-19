@@ -19,6 +19,7 @@ export default function OneRow(props) {
         <div className={listName}>
           Objects list
         </div>
+      </div>
     </div>
   );
 }
