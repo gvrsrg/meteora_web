@@ -1,17 +1,19 @@
 import React from "react";
-import ls from "./LoadingScreen.module.css";
+import screen from "./LoadingScreen.module.css";
 import loader from "../../assets/preloader.svg";
 
-const Loading = () => {
+export default function Loading() {
   return (
-    <div className={"fullScreen " + ls.loadingScreen}>
-      <div className={ls.screenPanel}>
-        <div className={ls.title}>Meteora</div>
-        <span className={ls.waitText}>Please wait. Starting the app...</span>
-        <img src={loader} alt="" className={"ui-icon " + ls.preloader} />
+    <div className={"fullScreen " + screen.loadingScreen}>
+      <div className={screen.screenPanel}>
+        <div className={screen.title}>
+          Meteora
+        </div>
+        <span className={screen.waitText}>
+          Please wait. Starting the app...
+        </span>
+        <img src={loader} alt="" className={"icon " + screen.preloader} />
       </div>
     </div>
   );
-};
-
-export default Loading;
+}

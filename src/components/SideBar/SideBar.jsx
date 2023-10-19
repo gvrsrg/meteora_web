@@ -16,7 +16,7 @@ export default function SideBar() {
   if (!sideItems) return null;
 
   return (
-    <aside className={side["ui-sidebar"]}>
+    <aside className={side.sidebar}>
       {client ? (
         <div className={userItem} onClick={(e) => to_user()}>
           <img src={client.icon} alt="" />

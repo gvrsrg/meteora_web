@@ -9,5 +9,6 @@ export default function GridBlock(props) {
       <div className={grid.list + " " + props.name}>
         Objects list
       </div>
+    </div>
   );
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import bg from "../../assets/images/bg.jpeg";
-import "../../styles/themes/dark.css";
 import header from "../../components/Header/Header.module.css";
 import welcome from "./WelcomePage.module.css";
 import Header from "../../components/Header/Header";

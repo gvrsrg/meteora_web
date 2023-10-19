@@ -1,5 +1,4 @@
 import React from "react";
-import "../../styles/themes/dark.css";
 import GridBlock from "../../components/GridBlock/GridBlock";
 import SideBar from "../../components/SideBar/SideBar";
 import Header from "../../components/Header/Header";
