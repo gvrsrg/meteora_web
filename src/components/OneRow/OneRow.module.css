@@ -1,36 +1,35 @@
-.row-block {
+.block {
     display: flex;
     user-select: none;
     flex-direction: column;
 }
 
-.row-block:not(:first-child) {
+.block:not(:first-child) {
     margin-top: 15px;
 }
 
-.row-title {
+.title {
     font-size: 18px;
     font-weight: 500;
 }
 
-
-.row-list,
-.list-tech {
+.list,
+.wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.list-tech {
+.wrapper {
     margin-top: 15px;
 }
 
-.row-list {
+.list {
     grid-gap: 15px;
     overflow-x: auto;
 }
 
-.create-club {
+.createClub {
     padding: 12px;
     border-radius: 5px;
     margin-right: 15px;

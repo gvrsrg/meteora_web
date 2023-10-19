@@ -6,7 +6,7 @@ import welcome from "./WelcomePage.module.css";
 import Header from "../../components/Header/Header";
 
 export default function Welcome() {
-  const bigStartButton = `form-button form-button__alt fb-yellow 
+  const bigStartButton = `formButton formButton__alt fb__yellow 
     fb__fit ${welcome.fb__big}`;
 
   return (

@@ -17,7 +17,7 @@ export default function Header(props) {
 
       {props.search ? <SearchBar /> : null}
 
-      <div className="ui-filler"></div>
+      <div className="filler"></div>
 
       {props.auth ? <AuthButtons color="yellow"/> : null}
     </header>

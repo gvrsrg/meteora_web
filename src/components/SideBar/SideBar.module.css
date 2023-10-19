@@ -1,11 +1,11 @@
-.ui-sidebar {
+.sidebar {
     display: flex;
     user-select: none;
     width: fit-content;
     flex-direction: column;
 }
 
-.menu-divider {
+.divider {
     height: 1px;
     margin: 10px 0 5px 0;
 }
@@ -13,41 +13,41 @@
 
 /* Menu item */
 
-.menu-item {
+.menuItem {
     display: flex;
     padding: 4px 5px;
     border-radius: 5px;
     align-items: center;
 }
 
-.menu-item > img {
+.menuItem > img {
     width: 20px;
     height: 20px;
 }
 
-.menu-item > span {
+.menuItem > span {
     font-size: 14px;
     font-weight: 500;
     margin: 0 25px 0 10px;
 }
 
-.menu-item:not(:first-child) {
+.menuItem:not(:first-child) {
     margin-top: 5px;
 }
 
-.menu-item:hover {
-    cursor: pointer;
+.menuItem:hover {
+  cursor: pointer;
 }
 
 
 /* User profile menu item */
 
-.user-item {
+.userItem {
     padding: 4px 5px;
     margin-bottom: 10px;
 }
 
-.user-item > img {
+.userItem > img {
     width: 24px;
     height: 24px;
     object-fit: cover;
@@ -55,6 +55,6 @@
     object-position: center;
 }
 
-.user-item > span {
+.userItem > span {
     font-size: 16px;
 }

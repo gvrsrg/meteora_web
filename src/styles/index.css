@@ -35,20 +35,20 @@ body {
 
 /* Re-usable UI misc */
 
-.form-button__alt {
+.formButton__alt {
   color: black;
 }
 
-.form-button:hover {
+.formButton:hover {
   cursor: pointer;
   transition: 0.15s background-color;
 }
 
-.ui-block {
+.block {
   padding: 12px;
   border-radius: 10px;
 }
 
-.ui-filler {
+.filler {
   flex: 1 1 auto;
 }

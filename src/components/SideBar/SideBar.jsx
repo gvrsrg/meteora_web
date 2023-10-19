@@ -6,7 +6,7 @@ import get_client from "../../data/api";
 
 export default function SideBar() {
   const [client, setClient] = useState(false);
-  const userItem = `${side["menu-item"]} ${side["user-item"]}`;
+  const userItem = `${side.menuItem} ${side.userItem}`;
   const to_user = () => (window.location.href = "/u/" + client.userId);
 
   useEffect(() => {
