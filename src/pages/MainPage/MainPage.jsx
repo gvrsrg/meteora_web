@@ -11,7 +11,7 @@ export default function Index() {
       <Header search={true} />
 
       <main className={"scrollArea " + index.scrollArea}>
-        <SideBar />
+        <SideBar needUser={true} />
 
         <div className={index.container}>
           <OneRow name="myClubs" title="Мои клубы" createClub={true} />
