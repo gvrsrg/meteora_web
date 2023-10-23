@@ -32,3 +32,9 @@ export const sideItems = [
     link: "/dev",
   },
 ];
+
+export const exceptions = {
+  "404": "Not Found",
+  "403": "Forbidden",
+  "400": "Bad Request",
+};

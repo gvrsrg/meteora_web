@@ -1,27 +1,27 @@
 .loadingScreen {
-    padding: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	padding: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .screenPanel {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
 
 .title {
-    font-size: 50px;
-    font-weight: 600;
+	font-size: 50px;
+	font-weight: 600;
 }
 
 .waitText {
-    font-size: 14px;
-    margin-top: 10px;
+	font-size: 14px;
+	margin-top: 10px;
 }
 
 .preloader {
-    width: 50%;
-    height: 65px;
+	width: 50%;
+	height: 65px;
 }

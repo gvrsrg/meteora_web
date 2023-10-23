@@ -1,74 +1,76 @@
 header,
 .logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
 header {
-    padding: 12px;
-    user-select: none;
+	padding: 12px;
+	user-select: none;
 }
 
 .header__alt {
-    border-bottom: none;
-    background-color: transparent;
+	border-bottom: none;
+	background-color: transparent;
 }
-
 
 /* App logo */
 
 .logo:hover {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 .logo > img {
-    width: 24px;
-    height: 24px;
+	width: 24px;
+	height: 24px;
 }
 
 .logo > span {
-    font-size: 20px;
-    font-weight: 600;
-    margin-left: 7.5px;
+	font-size: 20px;
+	font-weight: 600;
+	margin-left: 7.5px;
 }
-
 
 /* Support link */
 
 .links a {
-    font-size: 13px;
+	font-size: 13px;
 }
 
+.menu {
+	display: none;
+	margin-left: 15px;
+}
 
 /* Mobile-adaptive */
 
 @media all and (min-device-width: 1300px) {
-    header {
-        padding: 7.5px 10% !important;
-    }
+	header {
+		padding: 7.5px 10% !important;
+	}
 
-    main {
-        margin: 10px 10% !important;
-    }
+	main {
+		margin: 10px 10% !important;
+	}
 }
 
 @media all and (min-device-width: 1600px) {
-    header {
-        padding: 7.5px 20% !important;
-    }
+	header {
+		padding: 7.5px 20% !important;
+	}
 
-    main {
-        margin: 10px 20% !important;
-    }
+	main {
+		margin: 10px 20% !important;
+	}
 }
 
 @media all and (min-device-width: 2000px) {
-    header {
-        padding: 7.5px 30% !important;
-    }
+	header {
+		padding: 7.5px 30% !important;
+	}
 
-    main {
-        margin: 10px 30% !important;
-    }
+	main {
+		margin: 10px 30% !important;
+	}
 }

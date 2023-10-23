@@ -1,15 +1,14 @@
 .authButtons {
-    display: flex;
-    flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 
-.authButtons > 
-.authButton:not(:first-child) {
-    margin-left: 15px;
+.authButtons > .authButton:not(:first-child) {
+	margin-left: 15px;
 }
 
 .authButton {
-    font-weight: 500;
-    padding: 3px 7.5px;
-    border-radius: 5px;
+	font-weight: 500;
+	padding: 3px 7.5px;
+	border-radius: 5px;
 }
