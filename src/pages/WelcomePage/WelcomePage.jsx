@@ -5,26 +5,28 @@ import welcome from "./WelcomePage.module.css";
 import Header from "../../components/Header/Header";
 
 export default function Welcome() {
-  const bigStartButton = `formButton formButton__alt fb__yellow 
+	const bigStartButton = `formButton formButton__alt fb__yellow 
     fb__fit ${welcome.fb__big}`;
 
-  return (
-    <div className="fullScreen">
-      <img src={bg} alt="" className={welcome.background} />
+	return (
+		<div className="fullScreen">
+			<img src={bg} alt="" className={welcome.background} />
 
-      <Header className={header.header__alt} auth={true} />
+			<Header className={header.header__alt} auth={true} />
 
-      <main className={welcome.screen + " fullScreen__header"}>
-        <div className={welcome.title}>Meteora - здесь вам всегда рады</div>
+			<main className={welcome.screen + " fullScreen__header"}>
+				<div className={welcome.title}>
+					Meteora - здесь вам всегда рады
+				</div>
 
-        <div className={welcome.subtitle}>
-          Добро пожаловать туда, где люди важнее всего
-        </div>
+				<div className={welcome.subtitle}>
+					Добро пожаловать туда, где люди важнее всего
+				</div>
 
-        <div className={bigStartButton} onClick={(e) => {}}>
-          Начните сейчас
-        </div>
-      </main>
-    </div>
-  );
+				<div className={bigStartButton} onClick={(e) => {}}>
+					Начните сейчас
+				</div>
+			</main>
+		</div>
+	);
 }

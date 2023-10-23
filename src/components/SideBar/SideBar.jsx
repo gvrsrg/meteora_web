@@ -4,15 +4,15 @@ import UserItem from "../userItem/UserItem";
 import { sideItems } from "../../data/config";
 
 export default function SideBar(props) {
-  if (!sideItems) return null;
+	if (!sideItems) return null;
 
-  return (
-    <aside className={side.sidebar}>
-      {props.needUser ? <UserItem /> : null}
+	return (
+		<aside className={side.sidebar}>
+			{props.user ? <UserItem {...props.user} /> : null}
 
-      {sideItems.map((item) => (
-        <MenuItem key={Math.random()} {...item} />
-      ))}
-    </aside>
-  );
+			{sideItems.map((item) => (
+				<MenuItem key={Math.random()} {...item} />
+			))}
+		</aside>
+	);
 }

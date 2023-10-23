@@ -1,60 +1,58 @@
 .sidebar {
-    display: flex;
-    user-select: none;
-    width: fit-content;
-    flex-direction: column;
+	display: flex;
+	user-select: none;
+	width: fit-content;
+	flex-direction: column;
 }
 
 .divider {
-    height: 1px;
-    margin: 10px 0 5px 0;
+	height: 1px;
+	margin: 10px 0 5px 0;
 }
-
 
 /* Menu item */
 
 .menuItem {
-    display: flex;
-    padding: 4px 5px;
-    border-radius: 5px;
-    align-items: center;
+	display: flex;
+	padding: 4px 5px;
+	border-radius: 5px;
+	align-items: center;
 }
 
 .menuItem > img {
-    width: 20px;
-    height: 20px;
+	width: 20px;
+	height: 20px;
 }
 
 .menuItem > span {
-    font-size: 14px;
-    font-weight: 500;
-    margin: 0 25px 0 10px;
+	font-size: 14px;
+	font-weight: 500;
+	margin: 0 25px 0 10px;
 }
 
 .menuItem:not(:first-child) {
-    margin-top: 5px;
+	margin-top: 5px;
 }
 
 .menuItem:hover {
-  cursor: pointer;
+	cursor: pointer;
 }
-
 
 /* User profile menu item */
 
 .userItem {
-    padding: 4px 5px;
-    margin-bottom: 10px;
+	padding: 4px 5px;
+	margin-bottom: 10px;
 }
 
 .userItem > img {
-    width: 24px;
-    height: 24px;
-    object-fit: cover;
-    border-radius: 50%;
-    object-position: center;
+	width: 24px;
+	height: 24px;
+	object-fit: cover;
+	border-radius: 50%;
+	object-position: center;
 }
 
 .userItem > span {
-    font-size: 16px;
+	font-size: 16px;
 }
