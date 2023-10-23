@@ -8,6 +8,8 @@ header,
 header {
 	padding: 12px;
 	user-select: none;
+	display: flex;
+	justify-content: space-between;
 }
 
 .header__alt {
