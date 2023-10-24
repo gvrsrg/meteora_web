@@ -1,30 +1,103 @@
-main {
-	padding: 10px;
-	grid-gap: 20px;
-}
-
-.scrollArea {
+.screen {
 	display: flex;
-	overflow-y: auto;
-	overflow-x: hidden;
-	flex-direction: row;
-	padding-bottom: 15px;
-}
-
-.container {
-	display: flex;
-	flex: 1 1 auto;
+	overflow: hidden;
+	user-select: none;
+	align-items: center;
 	flex-direction: column;
+	justify-content: center;
+	height: calc(100vh - 50px);
+}
+
+.background {
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	filter: brightness(0.5);
+}
+
+/* First screen text */
+
+.title {
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.subtitle {
+	font-size: 25px;
+	font-weight: 500;
+	margin-top: 15px;
+}
+
+/* Big start button */
+
+.startButton {
+	font-size: 24px;
+	margin-top: 25px;
+	font-weight: 600;
+	padding: 7.5px 20px;
+	border-radius: 35px;
+	color: var(--alt_text);
+	background-color: var(--fb_yellow);
+}
+
+.startButton:hover {
+	cursor: pointer;
+	transition: 0.15s background-color;
+	background-color: var(--fb_yellow__hover);
+}
+
+.startButton:active {
+	background-color: var(--fb_yellow__active);
 }
 
 /* Mobile-adaptive */
 
-@media all and (max-device-width: 600px) {
-	aside {
-		display: none !important;
+@media all and (orientation: portrait) {
+	.background {
+		object-fit: cover;
+		object-position: center;
+	}
+}
+
+@media all and (max-device-width: 740px) {
+	.title {
+		font-size: 28px;
 	}
 
-	.navbar {
-		display: flex !important;
+	.subtitle {
+		font-size: 17px;
+	}
+
+	.startButton {
+		font-size: 22px;
+	}
+}
+
+@media all and (max-device-width: 530px) {
+	.title {
+		font-size: 22px;
+	}
+
+	.subtitle {
+		font-size: 14px;
+	}
+
+	.startButton {
+		font-size: 17px;
+	}
+}
+
+@media all and (max-device-width: 430px) {
+	.title {
+		font-size: 19px;
+	}
+
+	.subtitle {
+		font-size: 12px;
+	}
+
+	.startButton {
+		font-size: 14px;
 	}
 }
