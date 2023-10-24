@@ -1,6 +1,7 @@
+import React from "react";
 import side from "./SideBar.module.css";
 import MenuItem from "../MenuItem/MenuItem";
-import UserItem from "../userItem/UserItem";
+import UserItem from "../UserItem/UserItem";
 import { sideItems } from "../../data/config";
 
 export default function SideBar(props) {

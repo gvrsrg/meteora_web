@@ -1,0 +1,164 @@
+.flash-message {
+    display: none;
+    padding: 7.5px;
+    margin-top: 15px;
+    border-radius: 12px;
+}
+
+.screen {
+    height: 100vh;
+	display: flex;
+	overflow: hidden;
+	user-select: none;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.form {
+    margin: auto;
+    padding: 12px;
+    display: flex;
+    user-select: none;
+    width: fit-content;
+    border-radius: 10px;
+    flex-direction: column;
+    background-color: var(--ui_block_bg);
+    border: 1px solid var(--ui_block_border);
+}
+
+.title {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Form fields */
+
+.field {
+    display: flex;
+    margin-top: 20px;
+    border-radius: 12px;
+    background-color: var(--ui_darkBlock_bg);
+    border: 1px solid var(--ui_darkBlock_border);
+}
+
+.field:has(input:focus) {
+    transition: 0.15s border-color;
+    border-color: var(--ui_link__hover);
+}
+
+.field > input {
+    padding: 12px;
+    flex: 1 1 auto;
+    font-size: 19px;
+    overflow: hidden;
+    color: var(--main_text);
+    background-color: transparent;
+}
+
+.field > input:-webkit-autofill,
+.field > input:-webkit-autofill:focus {
+    border-radius: 12px;
+    caret-color: var(--autocomplete);
+    -webkit-text-fill-color: var(--autocomplete);
+    -webkit-box-shadow: 0 0 0 30px var(--ui_darkBlock_bg) inset;
+}
+
+.field > textarea {
+    flex: 1 1 auto;
+    font-size: 16px;
+    resize: vertical;
+}
+
+/* Form captcha widget */
+
+.captcha {
+    display: flex;
+    margin-top: 20px;
+    max-height: 45px;
+    position: relative;
+    flex-direction: row;
+}
+
+.captcha > .icon {
+    width: 50%;
+    height: 100%;
+    border-radius: 12px;
+    border: 1px solid var(--ui_darkBlock_border);
+}
+
+.captcha > .icon:hover {
+    cursor: pointer;
+    transition: 0.15s border-color;
+    border-color: var(--ui_link__hover);
+}
+
+.captcha > .icon:active {
+    border-color: var(--ui_link__active);
+}
+
+.captcha > .field {
+    margin-top: 0;
+    flex: 1 1 auto;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+/* Form hint links */
+
+.links {
+    display: flex;
+    margin-top: 20px;
+    align-self: center;
+    flex-direction: row;
+}
+
+.links a {
+    font-size: 15px;
+    color: var(--ui_link);
+    text-decoration: none;
+}
+
+.links a:hover {
+    transition: 0.15s color;
+    color: var(--ui_link__hover);
+}
+
+.links a:active {
+    color: var(--ui_link__active);
+}
+
+.links a:not(:first-child) {
+    margin-left: 15px;
+}
+
+
+/* Form submit button */
+
+.submit {
+    padding: 10px;
+    font-size: 19px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 12px;
+    background-color: var(--fb_green);
+}
+
+.submit:hover {
+    cursor: pointer;
+    transition: 0.15s background-color;
+    background-color: var(--fb_green__hover);
+}
+
+.submit:active {
+    background-color: var(--fb_green__active);
+}
+
+/* Mobile-adaptive */
+
+@media all and (max-device-width: 400px) {
+    .links a {
+        font-size: 14px;
+    }
+}

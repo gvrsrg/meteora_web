@@ -1,25 +1,18 @@
-export default function Navbar() {
-    return (
-        <div className="mobile-navbar">
-            <div className="nav-item">
-                <img src="/static/icons/ui/home.svg" alt="" className="ui-icon ui-clickable" />
-                <span>Главная</span>
-            </div>
-            
-            <div className="nav-item">
-                <img src="/static/icons/ui/chat.svg" alt="" className="ui-icon ui-clickable" />
-                <span>Чаты</span>
-            </div>
+import React from "react";
+import bar from "./NavBar.module.css";
+import NavItem from "../NavItem/NavItem";
+import { navbarItems } from "../../data/config";
 
-            <div className="nav-item" onclick="window.location.href = '/u/{{user[2]}}'">
-                <img src="/static/icons/ui/account.svg" alt="" className="ui-icon ui-clickale" />
-                <span>Профиль</span>
-            </div>
+export default function Navbar({ client }) {
+	navbarItems[3].action = () => alert("pisya") // кнопка "ещё"
+	
+	return (
+		<div className={bar.navbar}>
+			{navbarItems.map((item) => {
+				if (item.tet === "user") item = client;
 
-            <div className="nav-item" onclick="mobile_menu()">
-                <img src="/static/icons/ui/menu.svg" alt="" className="ui-icon ui-clickable" />
-                <span>Ещё</span>
-            </div>
-        </div>
-    )
+				return <NavItem key={Math.random()} {...item} />;
+			})}
+		</div>
+	);
 }

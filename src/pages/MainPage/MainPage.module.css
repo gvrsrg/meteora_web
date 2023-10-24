@@ -23,8 +23,4 @@ main {
 	aside {
 		display: none !important;
 	}
-
-	.navbar {
-		display: flex !important;
-	}
 }

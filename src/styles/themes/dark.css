@@ -1,5 +1,6 @@
 :root {
 	--alt_text: black;
+	--autocomplete: #ff8800;
 
 	--main_bg: #1f1f1f;
 	--main_text: #d8d8d8;
@@ -7,9 +8,13 @@
 	--ui_block_bg: #343434;
 	--ui_block_border: #414141;
 
+	--ui_link: #8f8f8f;
+	--ui_link__hover: #b8b8b8;
+	--ui_link__active: #7c7c7c;
+
     --ui_searchBar_bg: #303030;
 
-	--ui-darkBlock_bg: #202020;
+	--ui_darkBlock_bg: #202020;
 	--ui_darkBlock_border: #505050;
 
 	/* UI icons */

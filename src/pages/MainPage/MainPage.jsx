@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-import index from "./MainPage.module.css";
 import get_client from "../../data/api";
-import GridBlock from "../../components/GridBlock/GridBlock";
-import Loading from "../../components/Loading/LoadingScreen";
-import SideBar from "../../components/SideBar/SideBar";
+import index from "./MainPage.module.css";
+import { useNavigate } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 import Header from "../../components/Header/Header";
 import OneRow from "../../components/OneRow/OneRow";
+import Navbar from "../../components/Navbar/Navbar";
+import SideBar from "../../components/SideBar/SideBar";
+import GridBlock from "../../components/GridBlock/GridBlock";
+import Loading from "../../components/Loading/LoadingScreen";
 
 export default function Index() {
 	const navigate = useNavigate();
@@ -27,6 +28,8 @@ export default function Index() {
 	return (
 		<div className="app">
 			<Header search={true} />
+
+			<Navbar user={client} />
 
 			<main className={index.scrollArea}>
 				<SideBar user={client} />
