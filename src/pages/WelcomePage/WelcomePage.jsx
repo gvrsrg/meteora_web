@@ -2,7 +2,6 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import header from "../../components/Header/Header.module.css";
 import welcome from "./WelcomePage.module.css";
-import Header from "../../components/Header/Header";
 import bg from "../../assets/images/bg.jpeg";
 
 export default function Welcome() {

@@ -1,5 +1,6 @@
+import React from "react";
 import logo from "../../assets/favicon.svg";
-import header from "./Header.module.css";
+import cls from "./Header.module.css";
 import AuthButtons from "../AuthButtons/AuthButtons";
 import SearchBar from "../SearchBar/SearchBar";
 import React from "react";
