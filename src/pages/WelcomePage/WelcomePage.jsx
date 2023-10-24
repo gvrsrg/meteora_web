@@ -1,12 +1,12 @@
 import React from "react";
-import bg from "../../assets/images/bg.jpeg";
+import { useNavigate } from "react-router-dom";
 import header from "../../components/Header/Header.module.css";
 import welcome from "./WelcomePage.module.css";
 import Header from "../../components/Header/Header";
+import bg from "../../assets/images/bg.jpeg";
 
 export default function Welcome() {
-	const bigStartButton = `formButton formButton__alt fb__yellow 
-    fb__fit ${welcome.fb__big}`;
+	const navigate = useNavigate();
 
 	return (
 		<div className="fullScreen">
@@ -14,7 +14,7 @@ export default function Welcome() {
 
 			<Header className={header.header__alt} auth={true} />
 
-			<main className={welcome.screen + " fullScreen__header"}>
+			<main className={welcome.screen}>
 				<div className={welcome.title}>
 					Meteora - здесь вам всегда рады
 				</div>
@@ -23,7 +23,10 @@ export default function Welcome() {
 					Добро пожаловать туда, где люди важнее всего
 				</div>
 
-				<div className={bigStartButton} onClick={(e) => {}}>
+				<div
+					className={welcome.startButton}
+					onClick={(e) => navigate("/login")}
+				>
 					Начните сейчас
 				</div>
 			</main>

@@ -5,15 +5,14 @@ import error from "./ErrorPage.module.css";
 
 export default function Error({ code }) {
 	const navigate = useNavigate();
-	const formButton = `${error.formButton} formButton fb__green`;
 
 	return (
-		<div className={"fullScreen " + error.screen}>
-			<img src={error_img} alt="" className={"icon " + error.preview} />
+		<div className={error.screen}>
+			<img src={error_img} alt="" className={error.preview} />
 
 			<div className={error.title}>{exceptions[code]}</div>
 
-			<div className={formButton} onClick={() => navigate("/")}>
+			<div className={error.button} onClick={() => navigate("/")}>
 				На главную
 			</div>
 		</div>

@@ -6,7 +6,9 @@ export default function GridBlock(props) {
 		<div className={grid.block + " " + props.name}>
 			<div className={grid.title}>{props.title}</div>
 
-			<div className={grid.list + " " + props.name}>Objects list</div>
+			<div className={grid.list + " " + props.name}>
+				Objects list
+			</div>
 		</div>
 	);
 }

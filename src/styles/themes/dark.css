@@ -1,310 +1,51 @@
-body {
-  color: #d8d8d8;
-  background-color: #1f1f1f;
-}
-
-::-webkit-scrollbar {
-  width: 5px;
-  background-color: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 5px;
-  background-color: #515151;
-}
-
-header {
-  background-color: #343434;
-  border-bottom: 1px solid #414141;
-}
-
-/* Icons styles */
-
-@media all and (hover) {
-  .clickableIcon:hover {
-    /* #b0b0b0 */
-    filter: invert(68%) sepia(25%) saturate(23%) hue-rotate(317deg)
-      brightness(96%) contrast(98%);
-  }
-}
-
-.icon {
-  /* #d8d8d8 */
-  filter: invert(100%) sepia(0%) saturate(6044%) hue-rotate(212deg)
-    brightness(86%) contrast(95%);
-}
-
-.clickableIcon:active {
-  /* #808080 */
-  filter: invert(52%) sepia(2%) saturate(28%) hue-rotate(341deg) brightness(96%)
-    contrast(88%);
-}
-
-/* UI Hoverable styles */
-
-@media all and (hover) {
-  .menuItem:hover {
-    background-color: #343434;
-    transition: background-color 0.15s;
-  }
-
-  .club:hover,
-  .post:hover {
-    cursor: pointer;
-    filter: brightness(0.9);
-    transition: filter 0.15s;
-  }
-
-  /* Forms buttons */
-
-  .fb__green:hover {
-    background-color: #02833a;
-  }
-
-  .fb__red:hover {
-    background-color: #d10000;
-  }
-
-  .fb__blue:hover {
-    background-color: #005bb1;
-  }
-
-  .fb__yellow:hover {
-    background-color: #d87e00;
-  }
-
-  /* Inline uttons */
-
-  .ui-inlineButton:hover {
-    cursor: pointer;
-    background-color: #161616;
-    transition: 0.15s background-color;
-  }
-
-  /* Special links */
-
-  .links a:hover {
-    color: #b8b8b8;
-    transition: 0.15s color;
-  }
-}
-
-/* UI blocks styles */
-
-.block {
-  border: 1px solid #414141;
-  background-color: #343434;
-}
-
-.block__dark {
-  border: 1px solid #505050;
-  background-color: #202020;
-}
+:root {
+	--alt_text: black;
 
-/* Mobile-adaptive blocks */
+	--main_bg: #1f1f1f;
+	--main_text: #d8d8d8;
 
-.mobile-navbar {
-  background-color: #343434;
-  border-top: 1px solid #414141;
-}
+	--ui_block_bg: #343434;
+	--ui_block_border: #414141;
 
-.mobile-menu {
-  background-color: #252525;
-  border-bottom: 1px solid #414141;
-}
+    --ui_searchBar_bg: #303030;
 
-/* UI buttons styles */
+	--ui-darkBlock_bg: #202020;
+	--ui_darkBlock_border: #505050;
 
-.ui-inlineButton {
-  background-color: #252525;
-}
+	/* UI icons */
 
-.ui-inlineButton:active {
-  background-color: #161616;
-}
+	--ui_icon: invert(100%) sepia(0%) saturate(6044%) hue-rotate(212deg)
+		brightness(86%) contrast(95%); /* #d8d8d8 */
 
-/* Menu item button */
+	--ui_icon__hover: invert(68%) sepia(25%) saturate(23%) hue-rotate(317deg)
+		brightness(96%) contrast(98%); /* #b0b0b0 */
 
-.menuItem:active {
-  background-color: #343434;
-}
+	--ui_icon__active: invert(52%) sepia(2%) saturate(28%) hue-rotate(341deg)
+		brightness(96%) contrast(88%); /* #808080 */
 
-/* UI misc styles */
+	/* Form buttons */
 
-.divider {
-  background-color: #505050;
-}
+	--fb_green: #00a347;
 
-.placeholder {
-  font-size: 14px;
-  color: #8f8f8f;
-  white-space: nowrap;
-}
+	--fb_green__hover: #02833a;
 
-.input {
-  color: #d8d8d8;
-  background-color: transparent;
-}
+	--fb_green__active: #006b2e;
 
-/* Clubs list scroll styles */
+	--fb_red: #fd2828;
 
-.clubs-list::-webkit-scrollbar {
-  height: 5px;
-  border-radius: 5px;
-  background-color: #252525;
-}
+	--fb_red__hover: #d10000;
 
-.clubs-list::-webkit-scrollbar-thumb {
-  border-radius: 5px;
-  background-color: #515151;
-}
+	--fb_red__active: #a50000;
 
-/* Search bar styles (inline) */
+	--fb_blue: #0067c7;
 
-.searchBar {
-  background-color: #303030;
-  border: 1px solid #414141;
-}
+	--fb_blue__hover: #005bb1;
 
-/* Forms fields styles */
+	--fb_blue__active: #004b91;
 
-.form-input {
-  border: 1px solid #414141;
-}
+	--fb_yellow: #ff9300;
 
-.form-input > input,
-.form-input > textarea {
-  color: #d8d8d8;
-  background-color: transparent;
-}
+	--fb_yellow__hover: #d87e00;
 
-/* Forms buttons styles */
-
-.fb__green {
-  background-color: #00a347;
-}
-
-.fb__green:active {
-  background-color: #006b2e;
-}
-
-.fb__red {
-  background-color: #fd2828;
-}
-
-.fb__red:active {
-  background-color: #a50000;
-}
-
-.fb__blue {
-  background-color: #0067c7;
-}
-
-.fb__blue:active {
-  background-color: #004b91;
-}
-
-.fb__yellow {
-  background-color: #ff9300;
-}
-
-.fb__yellow:active {
-  background-color: #c77400;
-}
-
-/* Special links styles */
-
-.links a {
-  color: #8f8f8f;
-  text-decoration: none;
-}
-
-.links a:active {
-  color: #b8b8b8;
-}
-
-/* !!! */
-
-.status-icon {
-  /* #00a350 */
-  filter: invert(39%) sepia(50%) saturate(2824%) hue-rotate(127deg)
-    brightness(92%) contrast(101%);
-}
-
-/* ------------------------------------------------------------------------- */
-
-.wc-reply {
-  border-left: 2.5px solid #969696;
-}
-
-/* ------------------------------------------------------------------------- */
-
-._flash-error {
-  background-color: #ab0101;
-}
-
-/* ------------------------------------------------------------------------- */
-
-.mf-item > select {
-  color: #d8d8d8;
-  background-color: #393939;
-}
-
-/* ------------------------------------------------------------------------- */
-
-.tb-item:hover {
-  cursor: pointer;
-  background-color: #686868;
-}
-
-.tb-item:active {
-  background-color: #5e5e5e;
-}
-
-.tb-item-selected {
-  background-color: #646464;
-}
-
-.pw-reply {
-  border-left: 2px solid #8f8f8f;
-}
-
-/* ------------------------------------------------------------------------- */
-
-.online {
-  background-color: #00c555;
-}
-
-.offline {
-  background-color: #8f8f8f;
-}
-
-.tb-indicator {
-  background-color: red;
-}
-
-._verified {
-  color: #00d85e;
-}
-
-/* ------------------------------------------------------------------------- */
-
-.pw-menu-item:active {
-  color: #6d6d6d;
-}
-
-.embed-link {
-  color: #0297b1;
-}
-
-.embed-link:visited {
-  color: #0262b1;
-}
-
-.embed-link:active {
-  color: #007e94;
-}
-
-.embed-code {
-  color: #03a098;
+	--fb_yellow__active: #c77400;
 }

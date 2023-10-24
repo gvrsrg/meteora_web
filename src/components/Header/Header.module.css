@@ -1,5 +1,5 @@
-header,
-.logo {
+.logo,
+header {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -8,6 +8,8 @@ header,
 header {
 	padding: 12px;
 	user-select: none;
+	background-color: var(--ui_block_bg);
+	border-bottom: 1px solid var(--ui_block_border);
 }
 
 .header__alt {
@@ -32,15 +34,16 @@ header {
 	margin-left: 7.5px;
 }
 
+/* Content filler */
+
+.filler {
+	flex: 1 1 auto;
+}
+
 /* Support link */
 
 .links a {
 	font-size: 13px;
-}
-
-.menu {
-	display: none;
-	margin-left: 15px;
 }
 
 /* Mobile-adaptive */

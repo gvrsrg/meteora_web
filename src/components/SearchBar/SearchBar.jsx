@@ -1,13 +1,12 @@
 import React from "react";
-import search from "./SearchBar.module.css";
+import srch from "./SearchBar.module.css";
 
 // Сделать модальное окно с поиском
 // Сделать логику ввода запроса
 
 export default function SearchBar() {
-	const search_name = `${search.searchBar} searchBar`;
 	return (
-		<form className={search_name} onSubmit={(e) => e.preventDefault()}>
+		<form className={srch.searchBar} onSubmit={(e) => e.preventDefault()}>
 			<input type="text" placeholder="Поиск" className="input" />
 		</form>
 	);

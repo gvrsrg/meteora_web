@@ -1,19 +1,21 @@
 .screen {
-	padding: 15px;
 	display: flex;
+	overflow: hidden;
 	user-select: none;
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
+	height: calc(100vh - 50px);
 }
 
 .preview {
 	width: 150px;
 	height: 150px;
+	filter: var(--ui_icon);
 }
 
 .title,
-.formButton {
+.button {
 	text-align: center;
 	margin-bottom: 15px;
 }
@@ -23,8 +25,19 @@
 	font-weight: 700;
 }
 
-.formButton {
+.button {
 	font-size: 20px;
 	padding: 10px 25px;
 	border-radius: 25px;
+	background-color: var(--fb_green);
+}
+
+.button:hover {
+	cursor: pointer;
+	transition: 0.15s background_color;
+	background-color: var(--fb_green__hover);
+}
+
+.button:active {
+	background-color: var(--fb_green__active);
 }

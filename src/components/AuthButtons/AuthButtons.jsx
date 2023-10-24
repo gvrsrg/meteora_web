@@ -1,17 +1,23 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import buttons from "./AuthButtons.module.css";
 
-export default function AuthButtons(props) {
-  const buttonName = `formButton formButton__alt 
-    ${buttons.authButton} fb__${props.color}`;
+export default function AuthButtons() {
+	const navigate = useNavigate();
 
 	return (
 		<div className={buttons.authButtons}>
-			<div className={buttonName} onClick={(e) => {}}>
+			<div
+				className={buttons.authButton}
+				onClick={(e) => navigate("/register")}
+			>
 				Sign up
 			</div>
 
-			<div className={buttonName} onClick={(e) => {}}>
+			<div
+				className={buttons.authButton}
+				onClick={(e) => navigate("/login")}
+			>
 				Sign in
 			</div>
 		</div>

@@ -1,7 +1,11 @@
 .block {
+	padding: 12px;
 	display: flex;
 	user-select: none;
+	border-radius: 10px;
 	flex-direction: column;
+	background-color: var(--ui_block_bg);
+	border: 1px solid var(--ui_block_border);
 }
 
 .block:not(:first-child) {

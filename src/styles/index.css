@@ -6,50 +6,22 @@
 	box-sizing: border-box;
 }
 
-textarea,
-select,
-option,
-input,
+textarea, select,
+option, input,
 body {
 	border: none;
 	outline: none;
 	font-family: "Montserrat";
 }
 
-/* Re-usable globals */
-
-.scrollArea {
-	overflow-y: auto;
-	overflow-x: hidden;
+body {
+	color: var(--main_text);
+	background-color: var(--main_bg);
 }
+
+/* Re-usable globals */
 
 .fullScreen {
 	height: 100vh;
 	overflow: hidden;
-}
-
-.fullScreen__header {
-	overflow: hidden;
-	height: calc(100vh - 50px);
-}
-
-/* Re-usable UI misc */
-
-.formButton__alt {
-	color: black;
-}
-
-.formButton:hover,
-.clickableIcon:hover {
-	cursor: pointer;
-	transition: 0.15s background-color;
-}
-
-.block {
-	padding: 12px;
-	border-radius: 10px;
-}
-
-.filler {
-	flex: 1 1 auto;
 }

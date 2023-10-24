@@ -12,14 +12,15 @@ export default function Header(props) {
 				onClick={(e) => (window.location.href = "/")}
 			>
 				<img src={logo} alt="" />
+
 				<span>Meteora</span>
 			</div>
 
 			{props.search ? <SearchBar /> : null}
 
-			<div className="filler"></div>
+			<div className={header.filler}></div>
 
-			{props.auth ? <AuthButtons color="yellow" /> : null}
+			{props.auth ? <AuthButtons /> : null}
 		</header>
 	);
 }
