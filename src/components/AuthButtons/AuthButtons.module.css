@@ -8,14 +8,18 @@
 }
 
 .authButton {
-  font-weight: 500;
-  padding: 3px 7.5px;
-  border-radius: 5px;
-  color: black;
-  background-color: #ff9300;
-}
+	font-weight: 500;
+	padding: 3px 7.5px;
+	border-radius: 5px;
+	color: var(--alt_text);
+	background-color: var(--fb_yellow);
 
 .authButton:hover {
-  cursor: pointer;
-  transition: 0.15s background-color;
+	cursor: pointer;
+	transition: 0.15s background-color;
+	background-color: var(--fb_yellow__hover);
+}
+
+.authButton:active {
+	background-color: var(--fb_yellow__active);
 }

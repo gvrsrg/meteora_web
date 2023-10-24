@@ -1,11 +1,25 @@
 import React from "react";
-import cls from "./AuthButtons.module.css";
+import { useNavigate } from "react-router-dom";
+import buttons from "./AuthButtons.module.css";
 
 export default function AuthButtons() {
-  return (
-    <div className={cls.authButtons}>
-      <div className={cls.authButton}>Sign up</div>
-      <div className={cls.authButton}>Sign in</div>
-    </div>
-  );
+	const navigate = useNavigate();
+
+	return (
+		<div className={buttons.authButtons}>
+			<div
+				className={buttons.authButton}
+				onClick={(e) => navigate("/register")}
+			>
+				Sign up
+			</div>
+
+			<div
+				className={buttons.authButton}
+				onClick={(e) => navigate("/login")}
+			>
+				Sign in
+			</div>
+		</div>
+	);
 }

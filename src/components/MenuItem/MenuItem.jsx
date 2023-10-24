@@ -1,17 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import menu from "../SideBar/SideBar.module.css";
 
 export default function MenuItem({ icon, text, link }) {
-	const to = () => (window.location.href = link);
+	const navigate = useNavigate();
 
-	const item = `${menu.menuItem} menuItem`;
-	const mdiv = `${menu.divider} divider`;
-
-	if (text === "divider") return <div className={mdiv}></div>;
+	if (text === "divider") return <div className={menu.divider}></div>;
 
 	return (
-		<div className={item} onClick={(e) => to()}>
-			<img src={icon} alt="" className="icon" />
+		<div className={menu.menuItem} onClick={(e) => navigate(link)}>
+			<img src={icon} alt="" className={menu.icon} />
 			<span>{text}</span>
 		</div>
 	);

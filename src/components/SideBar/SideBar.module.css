@@ -8,6 +8,11 @@
 .divider {
 	height: 1px;
 	margin: 10px 0 5px 0;
+	background-color: var(--ui_darkBlock_border);
+}
+
+.icon {
+	filter: var(--ui_icon);
 }
 
 /* Menu item */
@@ -34,11 +39,19 @@
 	margin-top: 5px;
 }
 
-.menuItem:hover {
+.menuItem:hover,
+.userItem:hover {
 	cursor: pointer;
+	transition: 0.15s background-color;
+	background-color: var(--ui_block_bg);
 }
 
-/* User profile menu item */
+.menuItem:active,
+.userItem:active {
+	background-color: var(--ui_searchBar_bg);
+}
+
+/* Account menu item */
 
 .userItem {
 	padding: 4px 5px;

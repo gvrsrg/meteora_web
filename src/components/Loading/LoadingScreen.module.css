@@ -1,6 +1,8 @@
 .loadingScreen {
 	padding: 25px;
+	height: 100vh;
 	display: flex;
+	overflow: hidden;
 	align-items: center;
 	justify-content: center;
 }
@@ -24,4 +26,5 @@
 .preloader {
 	width: 50%;
 	height: 65px;
+	filter: var(--ui_icon);
 }

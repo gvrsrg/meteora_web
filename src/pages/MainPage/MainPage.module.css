@@ -5,6 +5,8 @@ main {
 
 .scrollArea {
 	display: flex;
+	overflow-y: auto;
+	overflow-x: hidden;
 	flex-direction: row;
 	padding-bottom: 15px;
 	overflow-y: auto;

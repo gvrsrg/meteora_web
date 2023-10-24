@@ -1,9 +1,9 @@
 .searchBar {
-  margin-left: 15px;
-  padding: 4px 7.5px;
-  border-radius: 10px;
-  background-color: #303030;
-  border: 1px solid #414141;
+	margin-left: 15px;
+	padding: 4px 7.5px;
+	border-radius: 10px;
+	border: 1px solid var(--ui_block_border);
+	background-color: var(--ui_searchBar_bg);
 }
 
 .searchBar__full {
@@ -11,7 +11,9 @@
 }
 
 .searchBar > input {
-  width: 100%;
-  font-size: 14px;
-  font-weight: 500;
+	width: 100%;
+	font-size: 14px;
+	font-weight: 500;
+	color: var(--main_text);
+	background-color: transparent;
 }
