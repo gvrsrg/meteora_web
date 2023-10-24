@@ -1,0 +1,30 @@
+.item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item:hover {
+    cursor: pointer;
+    transition: 0.15s filter;
+    filter: brightness(0.85);
+}
+
+.item:active {
+    filter: brightness(0.65);
+}
+
+.item > .icon {
+    width: 24px;
+    height: 24px;
+    filter: var(--ui_icon);
+}
+
+.item > span {
+    font-size: 13px;
+    margin-top: 5px;
+    max-width: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

@@ -1,11 +1,11 @@
 .screen {
 	display: flex;
+	flex: 1 1 auto;
 	overflow: hidden;
 	user-select: none;
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
-	height: calc(100vh - 50px);
 }
 
 .background {

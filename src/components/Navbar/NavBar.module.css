@@ -1,0 +1,21 @@
+.navbar {
+    bottom: 0;
+    z-index: 9;
+    width: 100%;
+    padding: 12px;
+    display: none;
+    position: fixed;
+    user-select: none;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--ui_block_bg);
+    border-top: 1px solid var(--ui_block_border);
+}
+
+/* Mobile-adaptive */
+
+@media all and (max-device-width: 600px) {
+	.navbar {
+		display: flex !important;
+	}
+}

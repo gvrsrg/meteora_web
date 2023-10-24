@@ -1,8 +1,8 @@
-import logo from "../../assets/favicon.svg";
-import header from "./Header.module.css";
-import AuthButtons from "../AuthButtons/AuthButtons";
-import SearchBar from "../SearchBar/SearchBar";
 import React from "react";
+import header from "./Header.module.css";
+import logo from "../../assets/favicon.svg";
+import SearchBar from "../SearchBar/SearchBar";
+import AuthButtons from "../AuthButtons/AuthButtons";
 
 export default function Header(props) {
 	return (
@@ -12,7 +12,6 @@ export default function Header(props) {
 				onClick={(e) => (window.location.href = "/")}
 			>
 				<img src={logo} alt="" />
-
 				<span>Meteora</span>
 			</div>
 
