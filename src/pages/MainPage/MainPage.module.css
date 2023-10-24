@@ -9,8 +9,6 @@ main {
 	overflow-x: hidden;
 	flex-direction: row;
 	padding-bottom: 15px;
-	overflow-y: auto;
-	overflow-x: hidden;
 }
 
 .container {

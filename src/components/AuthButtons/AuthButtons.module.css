@@ -13,6 +13,7 @@
 	border-radius: 5px;
 	color: var(--alt_text);
 	background-color: var(--fb_yellow);
+}
 
 .authButton:hover {
 	cursor: pointer;
