@@ -15,11 +15,11 @@ export default function Header(props) {
 				<span>Meteora</span>
 			</div>
 
-			{props.search ? <SearchBar /> : null}
+			{props.search && <SearchBar />}
 
 			<div className={header.filler}></div>
 
-			{props.auth ? <AuthButtons /> : null}
+			{props.auth && <AuthButtons />}
 		</header>
 	);
 }

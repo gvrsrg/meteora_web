@@ -32,10 +32,3 @@
 	grid-gap: 15px;
 	overflow-x: auto;
 }
-
-.createClub {
-	padding: 12px;
-	border-radius: 5px;
-	margin-right: 15px;
-	border: 2px dashed orange;
-}

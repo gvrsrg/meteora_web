@@ -1,7 +1,7 @@
 import React from "react";
 import bar from "./NavBar.module.css";
 import NavItem from "../NavItem/NavItem";
-import { navbarItems } from "../../data/config";
+import { navbarItems } from "../../js/config";
 
 export default function Navbar({ client }) {
 	navbarItems[3].action = () => alert("pisya") // кнопка "ещё"

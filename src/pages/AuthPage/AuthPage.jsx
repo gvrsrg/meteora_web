@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import form from "./AuthPage.module.css";
-import { formLinks, formTitles } from "../../data/config";
+import { formLinks, formTitles } from "../../js/config";
 
 export default function AuthPage({ mode }) {
 	function submit(e, mode) {
@@ -10,6 +10,7 @@ export default function AuthPage({ mode }) {
 		console.log(mode);
 	}
 
+	const links = formLinks[mode]
 	const [formTitle, buttonTitle] = formTitles[mode].split("&");
 
 	return (
@@ -23,7 +24,7 @@ export default function AuthPage({ mode }) {
 					<input type="email" name="email" placeholder="Почта" />
 				</div>
 
-				{["login", "register"].indexOf(mode) !== -1 ? (
+				{["login", "register"].includes(mode) && (
 					<div className={form.field}>
 						<input
 							name="secret"
@@ -32,9 +33,9 @@ export default function AuthPage({ mode }) {
 							autoComplete="new-password"
 						/>
 					</div>
-				) : null}
+				)}
 
-				{mode === "register" ? (
+				{mode === "register" && (
 					<div className={form.field}>
 						<input
 							type="text"
@@ -42,7 +43,7 @@ export default function AuthPage({ mode }) {
 							placeholder="Никнейм"
 						/>
 					</div>
-				) : null}
+				)}
 
 				<div className={form.captcha}>
 					<img src="" alt="" className={form.icon} />
@@ -56,15 +57,15 @@ export default function AuthPage({ mode }) {
 					{buttonTitle}
 				</div>
 
-				{formLinks[mode] ? (
+				{links && (
 					<div className={form.links}>
-						{formLinks[mode].map((link) => (
+						{links.map((link) => (
 							<Link key={Math.random()} to={link.to}>
 								{link.text}
 							</Link>
 						))}
 					</div>
-				) : null}
+				)}
 			</form>
 		</div>
 	);
