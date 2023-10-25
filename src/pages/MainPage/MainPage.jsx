@@ -1,4 +1,4 @@
-import get_client from "../../data/api";
+import get_client from "../../js/api";
 import index from "./MainPage.module.css";
 import { useNavigate } from "react-router-dom";
 import React, { useState, useEffect } from "react";
@@ -21,7 +21,7 @@ export default function Index() {
 
 	// Если клиент не загрузился, перенаправляем
 
-	setTimeout(() => (client ? navigate("/hello") : false), 2500);
+	setTimeout(() => (client && navigate("/hello")), 2500);
 
 	if (client) return <Loading />;
 

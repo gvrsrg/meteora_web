@@ -7,7 +7,7 @@ export default function Footer() {
 		<footer>
 			<div className={footer.copyright}>
 				&copy; Meteora 2023
-				<span>React reconstructed!</span>
+				<span>React 0.4.0 Beta!</span>
 			</div>
 
 			<div className={footer.links}>

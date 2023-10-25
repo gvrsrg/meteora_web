@@ -1,0 +1,49 @@
+.club,
+.createClub {
+    display: flex;
+    min-width: 100px;
+    max-width: 100px;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.club:hover {
+    cursor: pointer;
+    transition: 0.15s filter;
+    filter: brightness(0.85);
+}
+
+.club:active {
+    filter: brightness(0.65);
+}
+
+.club > img {
+    min-height: 100px;
+    max-height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    object-position: center;
+}
+
+.club > span {
+    font-size: 14px;
+    margin-top: 5px;
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.createClub {
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    border: 2px dashed var(--main_text);
+}
+
+.createClub > span {
+    font-size: 72px;
+    font-weight: 800;
+}

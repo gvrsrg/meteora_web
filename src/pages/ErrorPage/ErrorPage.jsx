@@ -1,7 +1,7 @@
 import React from "react";
 import error from "./ErrorPage.module.css";
+import { exceptions } from "../../js/config";
 import error_img from "../../assets/error.svg";
-import { exceptions } from "../../data/config";
 import { useNavigate } from "react-router-dom";
 
 export default function Error({ code }) {

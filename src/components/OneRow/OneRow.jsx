@@ -1,5 +1,7 @@
 import React from "react";
+import Club from "../Club/Club";
 import _block from "./OneRow.module.css";
+import preview from "../../assets/images/preview.jpg";
 
 // Сделать модальное окно для создания клуба
 
@@ -9,14 +11,26 @@ export default function OneRow(props) {
 			<span className={_block.title}>{props.title}</span>
 
 			<div className={_block.wrapper}>
-				{props.createClub ? (
-					<div className={_block.createClub} onClick={(e) => {}}>
-						Создать клуб
-					</div>
-				) : null}
-
 				<div className={_block.list + " " + props.name}>
-					Objects list
+					{props.createClub && (
+						<Club
+							icon="create"
+							title="Создать клуб"
+							clubId="create+club"
+						/>
+					)}
+
+					<Club
+						icon={preview}
+						clubId="123456"
+						title="Название клуба"
+					/>
+
+					<Club
+						icon={preview}
+						clubId="123456"
+						title="Название клуба"
+					/>
 				</div>
 			</div>
 		</div>
