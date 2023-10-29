@@ -28,21 +28,17 @@ export default function Index() {
 	return (
 		<div className="app">
 			<Header search={true} />
-
 			<Navbar user={client} />
 
 			<main className={index.scrollArea}>
 				<SideBar user={client} />
-
 				<div className={index.container}>
 					<OneRow
 						name="myClubs"
 						title="Мои клубы"
 						createClub={true}
 					/>
-					
 					<OneRow name="popularClubs" title="Поплуярные клубы" />
-
 					<GridBlock name="board" title="Вам может быть интересно" />
 				</div>
 			</main>
