@@ -1,5 +1,5 @@
 import React from "react";
-import club from "./Club.module.css";
+import club from "./ClubCard.module.css";
 import { useNavigate } from "react-router-dom";
 
 export default function Club({ icon, title, clubId }) {
@@ -7,14 +7,7 @@ export default function Club({ icon, title, clubId }) {
 
 	return (
 		<div className={club.club} onClick={(e) => navigate("/c/" + clubId)}>
-			{icon !== "create" ? (
-				<img src={icon} alt="" />
-			) : (
-				<div className={club.createClub}>
-					<span>+</span>
-				</div>
-			)}
-
+			<img src={icon} alt="" />
 			<span>{title}</span>
 		</div>
 	);

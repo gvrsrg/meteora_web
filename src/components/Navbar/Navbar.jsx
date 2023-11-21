@@ -6,8 +6,6 @@ import { navbarItems } from "../../js/config";
 export default function Navbar({ client }) {
     navbarItems[3].action = () => alert("pisya"); // кнопка "ещё"
 
-    console.log(navbarItems);
-
     return (
         <div className={bar.navbar}>
             {navbarItems.map((item, i) => {
