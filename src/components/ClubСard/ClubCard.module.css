@@ -1,5 +1,4 @@
-.club,
-.createClub {
+.club {
     display: flex;
     min-width: 100px;
     max-width: 100px;
@@ -32,18 +31,4 @@
     text-align: center;
     white-space: nowrap;
     text-overflow: ellipsis;
-}
-
-.createClub {
-    width: 100px;
-    height: 100px;
-    align-items: center;
-    border-radius: 10px;
-    justify-content: center;
-    border: 2px dashed var(--main_text);
-}
-
-.createClub > span {
-    font-size: 72px;
-    font-weight: 800;
 }

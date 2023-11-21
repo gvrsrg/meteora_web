@@ -32,3 +32,14 @@
 	grid-gap: 15px;
 	overflow-x: auto;
 }
+
+.preloader {
+	height: 32px;
+	filter: var(--ui_icon);
+}
+
+.placeholder {
+	font-size: 15px;
+	white-space: nowrap;
+	color: var(--ui_link);
+}

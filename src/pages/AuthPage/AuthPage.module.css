@@ -16,11 +16,11 @@
 }
 
 .form {
+    width: 40%;
     margin: auto;
     padding: 12px;
     display: flex;
     user-select: none;
-    width: fit-content;
     border-radius: 10px;
     flex-direction: column;
     background-color: var(--ui_block_bg);

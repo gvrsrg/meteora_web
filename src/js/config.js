@@ -4,6 +4,7 @@ import help from "../assets/ui/help.svg";
 import chat from "../assets/ui/chat.svg";
 import menu from "../assets/ui/menu.svg";
 import home from "../assets/ui/home.svg";
+import add from "../assets/ui/add.svg";
 
 export const sideItems = [
 	{
@@ -27,6 +28,12 @@ export const sideItems = [
 	},
 
 	{ text: "divider" },
+
+	{
+		icon: add,
+		text: "Создать клуб",
+		link: "/club",
+	},
 
 	{
 		icon: control,
