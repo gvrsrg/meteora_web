@@ -1,0 +1,23 @@
+.button {
+    display: flex;
+    padding: 2.5px 10px;
+    border-radius: 10px;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--ui_darkBlock_bg);
+    border: 1px solid var(--ui_darkBlock_border);
+}
+
+.button:not(:first-child) {
+    margin-left: 5px;
+}
+
+.button > img {
+    height: 18px;
+    filter: var(--ui_icon);
+}
+
+.val {
+    font-size: 12px;
+    margin-left: 5px;
+}

@@ -5,8 +5,8 @@ const KEY = "iTMYSOoXFwrCKhcDmzhOiwXeNXjTtIhPcwbegxCyvAsBHchNuCgNARBuDLjtMddDhON
 export default async function Sig(data) {
 	let _data = data
 		.replaceAll("'", '"')
-		.replaceAll(":", ": ")
-		.replaceAll(",", ", ");
+		.replaceAll('":', '": ')
+		.replaceAll(',"', ', "');
 
 	return hmac(_data, KEY, HmacAlgorithms.HmacSHA256, Encoders.hex).then(
 		(signature) => btoa(signature).replaceAll("=", "")
