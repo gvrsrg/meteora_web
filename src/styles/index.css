@@ -27,3 +27,9 @@ body {
 	overflow: hidden;
 	flex-direction: column;
 }
+
+/* Extra for failed fields pointer */
+
+.FailedField {
+	border-color: var(--flash_error);
+}

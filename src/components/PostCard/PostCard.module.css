@@ -1,0 +1,42 @@
+.post {
+	display: flex;
+    padding: 7.5px;
+	user-select: none;
+	border-radius: 10px;
+	flex-direction: column;
+	background-color: var(--ui_block_bg);
+	border: 1px solid var(--ui_block_border);
+}
+
+.post:hover {
+    cursor: pointer;
+    transition: 0.15s filter;
+    filter: brightness(0.95);
+}
+
+.post:active {
+    filter: brightness(0.85);
+}
+
+.post > img {
+    object-fit: cover;
+    border-radius: 10px;
+    object-position: center;
+}
+
+.title {
+    font-size: 24px;
+    margin-top: 2px;
+    font-weight: 700;
+}
+
+.desc {
+    font-size: 14px;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 5px;
+    flex-direction: row;
+    align-items: center;
+}

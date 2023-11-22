@@ -1,8 +1,13 @@
-.flash-message {
+.flash {
     display: none;
     padding: 7.5px;
     margin-top: 15px;
     border-radius: 12px;
+    background-color: var(--flash_error);
+}
+
+.flash:hover {
+    cursor: pointer;
 }
 
 .screen {
@@ -43,18 +48,34 @@
     border: 1px solid var(--ui_darkBlock_border);
 }
 
+.field__bbc {
+    display: flex;
+    padding: 7.5px;
+    grid-gap: 7.5px;
+    flex-direction: column;
+}
+
 .field:has(input:focus) {
     transition: 0.15s border-color;
     border-color: var(--ui_link__hover);
 }
 
-.field > input {
-    padding: 12px;
+.field > input,
+.field > textarea {
     flex: 1 1 auto;
-    font-size: 19px;
-    overflow: hidden;
     color: var(--main_text);
     background-color: transparent;
+}
+
+.field > input {
+    padding: 12px;
+    font-size: 19px;
+    overflow: hidden;
+}
+
+.field > textarea {
+    font-size: 16px;
+    resize: vertical;
 }
 
 .field > input:-webkit-autofill,
@@ -63,12 +84,6 @@
     caret-color: var(--autocomplete);
     -webkit-text-fill-color: var(--autocomplete);
     -webkit-box-shadow: 0 0 0 30px var(--ui_darkBlock_bg) inset;
-}
-
-.field > textarea {
-    flex: 1 1 auto;
-    font-size: 16px;
-    resize: vertical;
 }
 
 /* Form captcha widget */
@@ -115,6 +130,7 @@
 }
 
 .links a {
+    outline: none;
     font-size: 15px;
     color: var(--ui_link);
     text-decoration: none;

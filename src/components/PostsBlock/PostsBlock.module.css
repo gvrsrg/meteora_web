@@ -16,3 +16,14 @@
 	margin-top: 15px;
 	grid-template-columns: repeat(2, calc(50% - 7.5px));
 }
+
+.preloader {
+	height: 40px;
+	filter: var(--ui_icon);
+}
+
+.placeholder {
+	font-size: 15px;
+	white-space: nowrap;
+	color: var(--ui_link);
+}
