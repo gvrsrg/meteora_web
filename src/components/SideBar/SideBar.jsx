@@ -1,22 +1,23 @@
 import React from "react";
 import side from "./SideBar.module.css";
-import MenuItem from "../MenuItem/MenuItem";
 import UserItem from "../UserItem/UserItem";
-import { sideItems } from "../../js/config";
+import MenuItem from "../MenuItem/MenuItem";
 
-export default function SideBar(props) {
-	if (!sideItems) return null;
+export default function SideBar({ list, user }) {
+	if (!list) return null;
 
-	try {
-		if (props.user.developer !== true)
-			sideItems.pop(sideItems[sideItems.length]);
-	} catch (error) {}
+	if (user) {
+		if (user.developer !== true)
+			list.forEach((item) =>
+				item.link === "/dev" ? list.pop(item) : false
+			);
+	}
 
 	return (
 		<aside className={side.sidebar}>
-			{props.user && <UserItem {...props.user} />}
+			{user && <UserItem {...user} />}
 
-			{sideItems.map((item, i) => (
+			{list.map((item, i) => (
 				<MenuItem key={i} {...item} />
 			))}
 		</aside>
