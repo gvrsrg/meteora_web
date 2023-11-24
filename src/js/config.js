@@ -1,12 +1,41 @@
-import settings from "../assets/ui/settings.svg";
-import control from "../assets/ui/control.svg";
+import add from "../assets/ui/add.svg";
 import help from "../assets/ui/help.svg";
 import chat from "../assets/ui/chat.svg";
 import menu from "../assets/ui/menu.svg";
 import home from "../assets/ui/home.svg";
-import add from "../assets/ui/add.svg";
+import user from "../assets/ui/account.svg";
+import wallet from "../assets/ui/wallet.svg";
+import favs from "../assets/post/like_fav.svg";
+import control from "../assets/ui/control.svg";
+import settings from "../assets/ui/settings.svg";
 
-export const sideItems = [
+export const settingsItems = [
+	{
+		icon: user,
+		text: "Аккаунт",
+		tab: "account",
+	},
+	
+	{
+		icon: control,
+		text: "Общие",
+		tab: "home",
+	},
+
+	{
+		icon: wallet,
+		text: "Подписка",
+		tab: "subscribe",
+	},
+
+	{
+		icon: favs,
+		text: "Интересы",
+		tab: "favorites",
+	},
+]
+
+export const mainpageItems = [
 	{
 		icon: chat,
 		text: "Чаты",

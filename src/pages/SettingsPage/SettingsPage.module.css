@@ -1,0 +1,119 @@
+/* UI Misc */
+
+main {
+	height: auto;
+	min-height: calc(100vh - 55px);
+}
+
+.__red > .button {
+	background-color: var(--fb_red);
+}
+
+.__red > .button:hover {
+	background-color: var(--fb_red__hover);
+}
+
+.__red > .button:active {
+	background-color: var(--fb_red__active);
+}
+
+/* Settings tab */
+
+.tab {
+	padding: 12px;
+	display: flex;
+	flex: 1 1 auto;
+	grid-gap: 15px;
+	border-radius: 10px;
+	flex-direction: column;	
+	background-color: var(--ui_block_bg);
+	border: 1px solid var(--ui_block_border);
+}
+
+.title {
+	font-size: 22px;
+	font-weight: 600;
+	user-select: none;
+	text-align: center;
+}
+
+/* Settings row */
+
+.item {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.item:not(:first-child) {
+	margin-top: 7.5px;
+}
+
+.item > span {
+	flex: 1 1 auto;
+	font-size: 19px;
+	user-select: none;
+}
+
+.item > .button {
+	flex: 1 1 auto;
+}
+
+/* Buttons */
+
+.button {
+	display: flex;
+	padding: 5px 10px;
+	user-select: none;
+	border-radius: 10px;
+	white-space: nowrap;
+	align-content: center;
+	justify-content: center;
+}
+
+.button:hover {
+	cursor: pointer;
+	transition: 0.15s background-color;
+}
+
+/* Account widget */
+
+.user {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.user > img {
+	width: 24px;
+	height: 24px;
+	object-fit: cover;
+	border-radius: 50%;
+	object-position: center;
+}
+
+.user > span {
+	font-size: 19px;
+	max-width: 150px;
+	overflow: hidden;
+	margin-left: 7.5px;
+	text-overflow: ellipsis;
+}
+
+.user > span::after {
+	content: "✔";
+	color: #7bff47;
+	margin-left: 7.5px;
+}
+
+/* Submit button */
+
+.submit {
+	padding: 5px;
+}
+
+@media all and (max-device-width: 670px) {
+	.button {
+		font-size: 11px;
+	}
+}
