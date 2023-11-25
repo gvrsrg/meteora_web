@@ -1,7 +1,7 @@
 import React from "react";
 import post from "./PostCard.module.css";
 import { useNavigate } from "react-router-dom";
-import InlineButton from "../InlineButton/InlineButton";
+import PostButton from "../PostButton/PostButton";
 
 export default function Post(props) {
 	const navigate = useNavigate();
@@ -16,11 +16,11 @@ export default function Post(props) {
 			<div className={post.desc}>{props.content}</div>
 
 			<div className={post.buttons}>
-				<InlineButton
+				<PostButton
 					icon={props.isLiked ? "like" : "unlike"}
 					val={props.likes}
 				/>
-				<InlineButton icon="comment" val={props.comments} />
+				<PostButton icon="comment" val={props.comments} />
 			</div>
 		</div>
 	);

@@ -1,5 +1,5 @@
 import React from "react";
-import btn from "./InlineButton.module.css";
+import btn from "./PostButton.module.css";
 import like from "../../assets/post/like_fav.svg";
 import unlike from "../../assets/post/like_unfav.svg";
 import comments from "../../assets/post/comments.svg";
