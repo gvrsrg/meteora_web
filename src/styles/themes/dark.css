@@ -3,6 +3,12 @@
 	--flash_error: #5f98b3;
 	--autocomplete: #ff8800;
 
+	--green_text: #7bff47;
+	--green_filter: invert(86%) sepia(8%) saturate(3705%) hue-rotate(49deg) brightness(112%) contrast(107%);
+
+	--alt_block_hover: #1a1a1a;
+	--alt_block_active: #121212;
+
 	--main_bg: #1f1f1f;
 	--main_text: #d8d8d8;
 
