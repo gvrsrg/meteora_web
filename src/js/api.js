@@ -74,7 +74,7 @@ export async function form_resolve(mode, captcha, form) {
 }
 
 export async function get_captcha() {
-	let url = "/service/captcha";
+	const url = "/service/captcha";
 
 	try {
 		let response = await fetch(url);
@@ -88,7 +88,7 @@ export async function get_captcha() {
 }
 
 export async function get_clubs(cat, start) {
-	let url = "/global/root/clubs";
+	const url = "/global/root/clubs";
 
 	const body = JSON.stringify({
 		start: start,
@@ -128,7 +128,7 @@ export async function get_clubs(cat, start) {
 }
 
 export async function get_posts(start) {
-	let url = "/global/root/posts";
+	const url = "/global/root/posts";
 
 	const body = JSON.stringify({
 		start: start,
@@ -167,7 +167,7 @@ export async function get_posts(start) {
 }
 
 export async function get_client() {
-	let url = "/service/get_client";
+	const url = "/service/get_client";
 
 	try {
 		let response = await fetch(url, {
@@ -189,4 +189,28 @@ export async function get_client() {
 	} catch (error) {
 		return false;
 	}
+}
+
+export async function get_uinfo(userId, mode) {
+	const url = "/users/uid/" + mode;
+
+	let body = JSON.stringify({
+		userId: userId,
+	});
+	
+	let response = await fetch(url, {
+		method: "POST",
+		body: body,
+		headers: {
+			sig: await Sig(body),
+		},
+	});
+
+	if (!response.ok) return response.statusText;
+
+	response = await response.json();
+
+	if (response.api_statuscode !== 200) return response.api_message;
+
+	return response;
 }
