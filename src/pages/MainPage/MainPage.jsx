@@ -38,7 +38,7 @@ export default function Index() {
 
 				<div className={index.container}>
 					<ClubsBlock name="my" title="Мои клубы" createClub={true} />
-					<ClubsBlock name="popular" title="Поплуярные клубы" />
+					<ClubsBlock name="popular" title="Популярные клубы" />
 
 					<PostsBlock title="Вам может быть интересно" />
 				</div>
