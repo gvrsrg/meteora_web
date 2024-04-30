@@ -22,10 +22,12 @@ body {
 /* Re-usable globals */
 
 .fullScreen {
-	height: 100vh;
+	height: 100%;
+	width: 100%;
 	display: flex;
 	overflow: hidden;
 	flex-direction: column;
+	position: fixed;
 }
 
 /* Extra for failed fields pointer */
